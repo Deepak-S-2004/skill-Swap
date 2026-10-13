@@ -44,7 +44,7 @@ const router = createBrowserRouter([
     element:<Profile/>
   }
 ],{
-  basename:"/skill-Swap"
+  basename:"/skill-Swap/"
 });
 
 function App() {
