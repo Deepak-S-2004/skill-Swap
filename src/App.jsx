@@ -7,7 +7,7 @@ import Dashboard from "./components/dashboard";
 import AddSkill from "./components/addSkill";
 import Showskill from "./components/skill";
 import Profile from "./components/profile";
-import EditProfile from "./components/editProfile";
+
 
 
 const router = createBrowserRouter([
@@ -43,7 +43,9 @@ const router = createBrowserRouter([
     path:'/profile/:id',
     element:<Profile/>
   }
-]);
+],{
+  basename:"/skill-Swap"
+});
 
 function App() {
   return <RouterProvider router={router} />;
