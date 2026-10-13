@@ -25,7 +25,7 @@ function signup() {
       "https://6ac9d3343115bcc958200bc3.mockapi.io/version1/skills",  
       adddata,
     );
-    navigate("/Login");
+    navigate("/");
     try {
       console.log(adddata);
     } catch (error) {}
