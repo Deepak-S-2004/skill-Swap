@@ -12,7 +12,7 @@ import Profile from "./components/profile";
 
 const router = createBrowserRouter([
   {
-    path: "/Login",
+    path: "/",
     element: <Login />
   },
   {
