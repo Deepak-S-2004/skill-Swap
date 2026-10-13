@@ -13,23 +13,29 @@ function signup() {
     getValues,
     formState: { errors },
   } = useForm();
-  const postData = async (data) => {
-    const adddata = {
-      name: data.Name,
-      email: data.Email,
-      phone: data.Phone,
-      password: data.Password,
-      confirmpassword: data.ConfirmPassword,
-    };
-    await axios.post(
-      "https://6ac9d3343115bcc958200bc3.mockapi.io/version1/skills",  
-      adddata,
-    );
-    navigate("/");
-    try {
-      console.log(adddata);
-    } catch (error) {}
+ 
+const postData = async (data) => {
+  const adddata = {
+    name: data.Name,
+    email: data.Email,
+    phone: data.Phone,
+    password: data.Password,
+    confirmpassword: data.ConfirmPassword,
   };
+
+  try {
+    const response = await axios.post(
+      "https://6ac9d3343115bcc958200bc3.mockapi.io/version1/skills",
+      adddata
+    );
+
+    console.log(response.data);
+    navigate("/");
+  } catch (error) {
+    console.log(error);
+  }
+};
+
   return (
     <>
       <div className="flex p-6 justify-center items-center">
