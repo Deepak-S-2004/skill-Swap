@@ -25,7 +25,7 @@ const postData = async (data) => {
 
   try {
     const response = await axios.post(
-      "https://6ac9d3343115bcc958200bc3.mockapi.io/version1/skills",
+      "https://6ac7640975a4ce3fe721b0d9.mockapi.io/users",
       adddata
     );
 

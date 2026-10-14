@@ -13,7 +13,7 @@ function Login() {
 
   const submit = async (data) => {
     const response = await axios.get(
-      "https://6ac9d3343115bcc958200bc3.mockapi.io/version1/skills",
+      "https://6ac7640975a4ce3fe721b0d9.mockapi.io/users",
     );
     const users = response.data;
      const userData = users.find((user) => {
